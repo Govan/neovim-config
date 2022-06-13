@@ -185,10 +185,13 @@ inoremap <silent> <C-s> <Esc>:TmuxNavigateRight<cr>
 " }}}
 
 " Fuzzy File Finder {{{
-" Use fzf for project navigation
+" https://github.com/junegunn/fzf
+" https://github.com/junegunn/fzf.vim
+" Search project by filename
 noremap <C-p> :Files<CR>
 noremap! <C-p> <esc>:Files<CR>
 
+" search all buffers by filename
 noremap <C-y> :Buffers<CR>
 noremap! <C-y> <esc>:Buffers<CR>
 
