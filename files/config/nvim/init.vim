@@ -288,7 +288,7 @@ command Qall :qall
 
 " YouCompleteMe {{{
 
-" Add gitcommit to the blacklist of files that
+" Add gitcommit to the list of files that
 " shouldn't autocomplete words.
 let g:ycm_filetype_blacklist = {
       \ 'tagbar' : 1,
