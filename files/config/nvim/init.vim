@@ -5,6 +5,9 @@ syntax on  " Enable syntax highlighting
 set nofoldenable " Disable autofolded sections
 
 set lazyredraw
+" when playing <n>macros wait until all <n> are complete before
+" updating the screen
+" https://github.com/tpope/vim-sensible/issues/78
 
 " Enable folding based on syntax rules {{{
 set foldmethod=syntax
