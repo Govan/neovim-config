@@ -28,23 +28,7 @@ set noswapfile
 set nobackup
 " }}}
 
-" netrw config {{{
-let g:netrw_dirhistmax=0 " Don't leave .netrwhist files in cwd
 
-" ------------------
-" Fix Dvorak's home row
-" netrw overloads 't' with open-in-new-tab
-" http://unix.stackexchange.com/questions/31575/remapping-keys-in-vims-directory-view
-augroup netrw_dvorak_fix
-    autocmd!
-    autocmd filetype netrw call Fix_netrw_maps_for_dvorak()
-augroup END
-function! Fix_netrw_maps_for_dvorak()
-    noremap <buffer> t j
-endfunction
-" ------------------
-
-" }}}
 
 " Buffer Management {{{
 set hidden "  allow buffer swapping when the current buffer is unsaved
@@ -365,6 +349,9 @@ let g:terraform_align=1
 "
 
 
+" netrw config {{{
+let g:netrw_dirhistmax=0 " Don't leave .netrwhist files in cwd
+
 function! NetrwMapping()
 endfunction
 
@@ -374,15 +361,11 @@ augroup netrw_mapping
 augroup END
 
 function! NetrwMapping()
-  " nmap <buffer> H u
-  " nmap <buffer> h -^
-  " nmap <buffer> l <CR>
-
-  " nmap <buffer> . gh
-  nmap <buffer> P <C-w>z
-  " nmap <buffer> L <CR>:Lexplore<CR>
-  " nmap <buffer> <Leader>dd :Lexplore<CR>
+  noremap <buffer> t j
+  " netrw overloads 't' with open-in-new-tab
+  " http://unix.stackexchange.com/questions/31575/remapping-keys-in-vims-directory-view
 endfunction
+" }}}
 
 source ~/.vimrc_local
 
