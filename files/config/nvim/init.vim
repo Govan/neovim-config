@@ -1,3 +1,5 @@
+" vim: foldmethod=marker
+
 let mapleader=" "
 set number " Turn on line numbers
 syntax on  " Enable syntax highlighting
