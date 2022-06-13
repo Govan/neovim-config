@@ -381,8 +381,5 @@ function! NetrwMapping()
   " nmap <buffer> <Leader>dd :Lexplore<CR>
 endfunction
 
-nmap <leader>] ]m<CR>
-
-
 source ~/.vimrc_local
 
