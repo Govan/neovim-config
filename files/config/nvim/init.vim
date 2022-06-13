@@ -264,9 +264,6 @@ fun! <SID>StripTrailingWhitespaces()
   %s/\s\+$//e
   call cursor(l, c)
 endfun
-
-" This is rather aggressive - it'll strip all trailing whitespace on all
-" files. That might bo overkill, but sod it.
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " }}}
 
