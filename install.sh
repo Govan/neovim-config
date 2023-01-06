@@ -19,8 +19,6 @@ else # If it's me then I'm on ubuntu
   pip3 install neovim --upgrade
 fi
 
-touch ~/.vimrc_local
-
 echo "Installing vim-plug: https://github.com/junegunn/vim-plug"
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 

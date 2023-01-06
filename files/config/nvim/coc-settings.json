@@ -1,0 +1,16 @@
+{
+  "codeLens.enable": true,
+  "solargraph.useBundler": true,
+  "solargraph.bundlerPath": "/Users/gavin/.rbenv/shims/bundle",
+  "solargraph.checkGemVersion": false,
+  "solargraph.diagnostics": true,
+  "solargraph.formatting": false,
+  "solargraph.hover": true,
+  "diagnostic.errorSign": "e",
+  "diagnostic.warningSign": "w",
+  "diagnostic.infoSign": "i",
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "coc.preferences.formatOnSaveFiletypes": ["ruby"]
+
+}
