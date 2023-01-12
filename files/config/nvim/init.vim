@@ -649,10 +649,6 @@ augroup markdownFileType
   autocmd FileType markdown setlocal spell
 augroup end
 
-" Edit vimrc
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
-
 nnoremap H 0
 nnoremap  0
 
