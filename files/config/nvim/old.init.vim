@@ -86,39 +86,6 @@ if has("autocmd")
 endif
 " }}}
 
-" Install plugins {{{
-" https://github.com/junegunn/vim-plug
-call plug#begin('~/.local/share/nvim/plugged')
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'pearofducks/ansible-vim'
-Plug 'airblade/vim-gitgutter'
-" Plug 'altercation/vim-colors-solarized'
-Plug 'christoomey/vim-tmux-navigator'
-" Plug 'dense-analysis/ale'
-Plug 'hashivim/vim-terraform'
-Plug 'jgdavey/tslime.vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'mattn/emmet-vim'
-Plug 'mileszs/ack.vim'
-Plug 'rizzatti/dash.vim'
-Plug 'takac/vim-hardtime'
-Plug 'thoughtbot/vim-rspec'
-Plug 'tanvirtin/monokai.nvim'
-Plug 'shaunsingh/solarized.nvim'
-
-Plug 'psliwka/vim-smoothie'
-Plug 'itchyny/lightline.vim'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-rhubarb'
-Plug 'tpope/vim-surround'
-Plug 'neoclide/Coc.nvim', {'branch': 'release'}
-call plug#end()
-" }}}
-
 colorscheme solarized
 set background=light
 
@@ -130,29 +97,6 @@ set updatetime=100
 
 " emmet-vim{{{
 let g:user_emmet_leader_key='<C-L>'
-" }}}
-" vim-surround.vim{{{
-" ds and cs interfere with my home row
-let g:surround_no_mappings = 1
-nmap dl  <Plug>Dsurround
-nmap cl  <Plug>Csurround
-nmap cL  <Plug>CSurround
-nmap yl  <Plug>Ysurround
-nmap yL  <Plug>YSurround
-nmap yll <Plug>Yssurround
-nmap yLl <Plug>YSsurround
-nmap yLL <Plug>YSsurround
-xmap L   <Plug>VSurround
-xmap gL  <Plug>VgSurround
-if !exists("g:surround_no_insert_mappings") || ! g:surround_no_insert_mappings
-  if !hasmapto("<Plug>Isurround","i") && "" == mapcheck("<C-S>","i")
-    imap    <C-S> <Plug>Isurround
-  endif
-  imap      <C-G>l <Plug>Isurround
-  imap      <C-G>L <Plug>ISurround
-endif
-
-
 " }}}
 " Dash.vim{{{
 nnoremap <leader>p :Dash<cr>
