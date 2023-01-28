@@ -404,9 +404,9 @@ set splitbelow
 set splitright
 
 " Make the system board easier to write
-nnoremap <c-y> "*y
-nnoremap <c-Y> "*Y
-vnoremap <c-y> "*y
+" nnoremap <c-y> "*y
+" nnoremap <c-Y> "*Y
+" vnoremap <c-y> "*y
 
 " Search project for current word
 nnoremap <leader>F :Ack <cword> <CR>
