@@ -29,5 +29,7 @@ Plug 'neoclide/Coc.nvim', {'branch': 'release'}
 call plug#end()
 " }}}
 
+let mapleader=" "
 
 runtime vim-surround-config.vim
+runtime coc-config.vim

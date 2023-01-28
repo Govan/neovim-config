@@ -1,11 +1,10 @@
 " vim: foldmethod=marker
 
-let mapleader=" "
 set number " Turn on line numbers
 syntax on  " Enable syntax highlighting
 
 set cursorline
-se nofoldenable " Disable autofolded sections
+set nofoldenable " Disable autofolded sections
 
 set lazyredraw
 " when playing <n>macros wait until all <n> are complete before
@@ -239,7 +238,7 @@ nnoremap Q <Nop>
 " }}}
 
 " I'm forever typing :Q instead of :q {{{
-command Q :q
+" command Q :q
 command Qall :qall
 " }}}
 
@@ -344,9 +343,6 @@ augroup markdownFileType
   autocmd FileType markdown setlocal colorcolumn=80
   autocmd FileType markdown setlocal spell
 augroup end
-
-nnoremap H 0
-nnoremap  0
 "
 " Edit vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
