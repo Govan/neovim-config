@@ -339,8 +339,8 @@ inoremap <c-u> <esc>gUawgi
 
 augroup markdownFileType
   autocmd!
-  autocmd FileType markdown setlocal textwidth=80
-  autocmd FileType markdown setlocal colorcolumn=80
+  autocmd FileType markdown setlocal textwidth=72
+  autocmd FileType markdown setlocal colorcolumn=72
   autocmd FileType markdown setlocal spell
 augroup end
 "
