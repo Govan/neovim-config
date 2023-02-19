@@ -16,6 +16,7 @@ Plug 'takac/vim-hardtime'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'shaunsingh/solarized.nvim'
+Plug 'Yggdroot/indentLine'
 
 Plug 'psliwka/vim-smoothie'
 Plug 'itchyny/lightline.vim'
@@ -33,3 +34,4 @@ let mapleader=" "
 
 runtime vim-surround-config.vim
 runtime coc-config.vim
+runtime indentLine-config.vim
