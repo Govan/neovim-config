@@ -85,9 +85,6 @@ if has("autocmd")
 endif
 " }}}
 
-colorscheme solarized
-set background=light
-
 " vim-gitgutter.vim{{{
 " Recommends reducing the refresh time
 " from the default of 4000ms
@@ -331,9 +328,6 @@ endfunction
 
 
 " {{{ The hodge-podge of crap that was my ~/.vimrc_local
-colorscheme monokai_pro
-set background=light
-
 " Uppercase word from insert mode
 inoremap <c-u> <esc>gUawgi
 

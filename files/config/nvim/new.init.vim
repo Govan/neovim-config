@@ -16,7 +16,7 @@ Plug 'takac/vim-hardtime'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'shaunsingh/solarized.nvim'
-
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'psliwka/vim-smoothie'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
@@ -28,8 +28,11 @@ Plug 'tpope/vim-surround'
 Plug 'neoclide/Coc.nvim', {'branch': 'release'}
 call plug#end()
 " }}}
-
 let mapleader=" "
+
+set termguicolors
+colorscheme catppuccin_mocha
+set background=light
 
 runtime vim-surround-config.vim
 runtime coc-config.vim
