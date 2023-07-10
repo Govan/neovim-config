@@ -34,5 +34,12 @@ set termguicolors
 colorscheme catppuccin_mocha
 set background=light
 
+" Make the jump list behave like a browser history {{{
+" https://neovim.io/doc/user/motion.html#jumplist-stack
+set jumpoptions+=stack
+" }}}
+
 runtime vim-surround-config.vim
 runtime coc-config.vim
+
+
