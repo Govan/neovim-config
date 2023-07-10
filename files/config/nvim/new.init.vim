@@ -39,7 +39,13 @@ set background=light
 set jumpoptions+=stack
 " }}}
 
+" Edit the file under the cursor in a vertical split {{{
+" https://vi.stackexchange.com/questions/3364/open-filename-under-cursor-like-gf-but-in-a-new-tab-or-split
+nnoremap <C-W><C-F> <C-W>vgf
+" }}}
+
 runtime vim-surround-config.vim
 runtime coc-config.vim
+
 
 
